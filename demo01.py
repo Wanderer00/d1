@@ -181,3 +181,88 @@
 #     print("sql语句错误！")
 
 # page61
+
+# class GirlFriend():
+#     def __init__(self):
+#         self.sex = "女"
+#         self.high = "165cm"
+#         self.weight = "50kg"
+#         self.hair = "短头发"
+#         self.age = "25岁"
+    
+#     def Talent(self,num):
+#         """
+#         才艺表演
+#         """
+#         if num == 1:
+#             print("你的身高为"+self.high+"，体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了胸口碎大石！")
+#         elif num == 2:
+#             print("你的身高为"+self.high+"体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了唱跳RAP篮球！")
+#         else:
+#             print("你的身高为"+self.high+"体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了单手开瓶盖！")
+
+#     def Cooking(self):
+#         """厨艺持家"""
+#         print("精通八大菜系！")
+
+#     def Job(self):
+#         """
+#         工作挣钱
+#         """
+#         print("开挖掘机！")
+
+# 类的实例化
+# She = GirlFriend()
+# She.Talent(2)
+
+
+# class GirlFriend():
+#     def __init__(self,sex,high,weight,hair,age):
+#         self.sex = sex
+#         self.high = high
+#         self.weight = weight
+#         self.hair = hair
+#         self.age = age
+    
+#     def Talent(self,num):
+#         """
+#         才艺表演
+#         """
+#         if num == 1:
+#             print("你的身高为"+self.high+"，体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了胸口碎大石！")
+#         elif num == 2:
+#             print("你的身高为"+self.high+"体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了唱跳RAP篮球！")
+#         else:
+#             print("你的身高为"+self.high+"体重为"+self.weight+"发型为"+self.hair+"的"+self.sex+"朋友"+"开始了单手开瓶盖！")
+
+#     def Job(self):
+#         """
+#         工作挣钱
+#         """
+#         print("开挖掘机！")
+
+# # 继承
+# class GirlFriend1(GirlFriend):
+#     pass
+
+# # 重写
+# class GirlFriend2(GirlFriend):
+#     def Job(self):
+#         print("修电脑！")
+
+# She = GirlFriend2("女","170cm","51kg","长头发","18岁")
+# She.Talent(3)
+# She.Job()
+
+import time
+
+now = time.strftime("%y-%m-%d %H:%M:%S")
+text = input("请输入今天的心情：")
+with open("e:\日记.txt","a",encoding="utf8") as f:
+    f.write(now+"\n")
+    f.write(text+"\n")
+    f.write("-----------------------------------\n")
+
+
+
+
